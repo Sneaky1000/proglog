@@ -1,7 +1,7 @@
 # Proglog
 ## [Section 1 | Part 1]
 ### This project is split into multiple sections and parts to learn and teach myself about distributed services with Go.
-This section is focused on the basic elements:
+**Section 1**: The basic elements
  - Building a storage layer
  - Defining data structures
  
