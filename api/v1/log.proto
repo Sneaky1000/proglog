@@ -1,0 +1,18 @@
+// Specify the syntax being used.
+syntax = "proto3";
+
+// Specify a package name to prevent clashes between protocol message types
+// that have the same name and because this package name is used as the
+// package name in the generated Go code.
+package log.v1;
+
+option go_package = "github.com/Sneaky1000/api/log_v1";
+
+// Protobuf messages are almost equivalent to Go structs.
+// Protobuf has a handy feature that allows one to version
+// fields. Each field has a type, name, and unique field number.
+// (Field numbers identify fields in marshaled binary format)
+message Record {
+  bytes value = 1;
+  uint64 offset = 2;
+}
